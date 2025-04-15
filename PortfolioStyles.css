@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+}
+body {
+    margin: 0;
+    background-color: #cfeecf;
+    font-size: large;
+}
+
+#title {
+    text-align: center;
+    font-size: xx-large;
+    color: navy;
+}
+
+#Second_ttl {
+    text-align: center;
+    color: rgb(90, 9, 54);
+}
+
+header {
+    margin:0;
+    background-color: rgb(195, 232, 234);
+    width: 100%;
+    padding: 0;
+    height: 50px !important;
+}
+
+.nav-links {
+    margin: 0;
+    background-color: palevioletred;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.nav-links a.active {
+    color: white;
+    background-color: purple;
+}
+
+.nav-links a:hover:not(.active) {
+    background-color: chartreuse;
+    color: black;
+}
+
+.nav-links a:visited {
+    color: white;
+}
+
+#FLcard {
+    width:900px;
+    height: 400px;
+} 
+
+#Group {
+    width: 300px;
+    height: 400px;
+}
+
+#Grip {
+    width: 400px;
+    height: 400px;
+}
+
+#HandSketch {
+    width: 500px;
+    height: 400px;
+}
+
+#Eggs {
+    width: 700px;
+    height: 400px;
+}
+
+#RVN {
+    width: 275px;
+    height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: palegoldenrod;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .nav-links a.active {
+        display: flex;
+    }
+
+    .nav-links a{
+        margin: 10px 0;
+
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
