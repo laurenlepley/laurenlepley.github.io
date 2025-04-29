@@ -10,22 +10,22 @@ document.addEventListener('DOMContentLoaded', function () {
         cb.addEventListener('click', function() {
             switch (index) {
                 case 0:
-                    alert("Realistic art aims to depict subjects as they appear in the real world with a high degree of accuracy and detail.");
+                    alert("Watercolor paint is a type of paint characterized by its transparent nature, achieved through the use of pigments suspended in a water.");
                     break;
                 case 1:
-                    alert("Abstract art does not attempt to represent external reality, but seeks to achieve its effect using shapes, forms, colors, and textures.");
+                    alert("Acrylic paint is water-based fast-drying paint.");
                     break;
                 case 2:
-                    alert("Surrealistic art is characterized by dreamlike imagery, illogical juxtapositions, and a focus on the unexpected.");
+                    alert("Oil paint involves the procedure of painting with pigments combined with a drying oil as the binder. **This medium usually takes the longest as the paint takes weeks to dry completely.**");
                     break;
                 case 3:
-                    alert("Expressionistic art often involves distorted forms, vivid colors, and vigorous brushstrokes to convey intense feelings.");
+                    alert("Graphite pencils are the typical drawing medium and most commonly used for sketches.");
                     break;
                 case 4:
-                    alert("Romantic art is characterized by its emphasis on emotion, imagination, and the subjective experience over reason and objectivity.");
+                    alert("Colored pencils are similar to graphite pencils, but they are pigmented to add a greater intensity and range of value.");
                     break;
                 case 5:
-                    alert("Baroque art is characterized by elaborate ornamentation, dramatic effects, and a sense of movement and tension, often conveying grandeur and opulence.");
+                    alert("Charcoal is a dry drawing material made from burnt wood, used to create drawings and sketches.");
                     break;
             }
         });
