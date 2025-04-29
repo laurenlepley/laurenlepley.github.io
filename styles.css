@@ -33,7 +33,7 @@ header {
     font-size: small;
 }
 
-/* Navigation Links */
+/* Navigation Links - Expanded Rose Banner */
 .nav-links {
     margin: 0;
     background-color: palevioletred;
@@ -42,6 +42,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    padding: 20px 0; /* Increased padding to make banner larger */
 }
 
 /* Navigation Links */
