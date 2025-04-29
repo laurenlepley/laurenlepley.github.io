@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lauren Lepley">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle">&#9776;</div>
+            <div class="nav-links">
+            <a href="index.html">Home</a> 
+            <a href="QuestionsandAnswers.html">Q&A</a> 
+            <a href="Portfolio.html">Portfolio</a> 
+            <a href="order.html" class="active">Order</a>
+            </div>
+        </nav> 
+    </header>
+   
+   <h1><i>Commission Form</i></h1>
+   <form id="OrderForm">
+    
+    <h2>Customer Information</h2>
+
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="First_Name"></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="Last_Name"></td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+            <td><input type="text" name="Phone_Number"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" name="Email"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><input type="text" name="Address"></td>
+        </tr>
+    </table>
+    
+    <h2>Canvas Size</h2>
+
+    <select name="Choose_Size">
+        <option value="Mini">5x7 inches</option>
+        <option value="Small">8x10 inches</option>
+        <option value="Medium">9x12 inches</option>      
+        <option value="Large">11x14 inches</option>
+        <option value="Extra_Large">16x24 inches</option>
+    </select>
+    
+    <h2>Medium Style</h2>
+    <input type="radio" name="medium_style" value="acrylic"><label for="acrylic">Acrylic Paint</label>
+    <input type="radio" name="medium_style" value="watercolor"><label for="watercolor">Watercolor Paint</label>
+    <input type="radio" name="medium_style" value="oil"><label for="oil">Oil Paint</label>
+    <input type="radio" name="medium_style" value="Graphite"><label for="Graphite">Graphite Pencils</label>
+    <input type="radio" name="medium_style" value="colored_pencils"><label for="colored_pencils">Colored Pencils</label>
+    <input type="radio" name="medium_style" value="charcoal"><label for="charcoal">Charcoal</label>
+    
+    <h2>Style</h2>
+
+    <input type="checkbox" value="Realistic" id="realist"><label for="realist">Realistic</label>
+    <input type="checkbox" value="Abstract" id="abst"><label for="abst">Abstract</label>
+    <input type="checkbox" value="Surrealistic" id="surreal"><label for="surreal">Surrealistic</label>
+    <input type="checkbox" value="Expressionistic" id="express"><label for="express">Expressionistic</label>
+    <input type="checkbox" value="Romantic" id="romantic"><label for="romantic">Romantic</label>
+    <input type="checkbox" value="Baroque" id="baroque"><label for="baroque">Baroque</label>
+    
+    <h2>Request</h2>
+
+    <input type="radio" name="Request" value="From_Life"><label for="From_Life">From Life</label>
+    <input type="radio" name="Request" value="Idea"><label for="Idea">Idea</label>
+    <input type="radio" name="Request" value="Business"><label for="Business">Business Related</label>
+    <br/>
+    <textarea name="special_request" cols="40" rows="4">Please describe your request here...</textarea>
+
+    <br/>
+    <br/>
+
+    <button type="submit" name="submitButton">Submit Order</button>
+    <button type="reset" name="resetButton">Reset</button>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
