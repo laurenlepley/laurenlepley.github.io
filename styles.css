@@ -42,21 +42,25 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    height: 40px; /* Adjusting nav bar height */
-    line-height: 40px; /* Ensuring text is vertically centered */
+    align-items: center; /* Ensuring vertical alignment */
+    height: 30px; /* Reducing nav height */
     padding: 0; /* Removing excess space */
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
-    padding: 5px 10px; /* Reducing space around links */
-    font-size: 16px; /* Making font smaller */
+    padding: 3px 8px; /* Reducing space around links */
+    font-size: 14px; /* Making font smaller */
+    display: flex; /* Ensures items align properly */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
 }
 
 .nav-links a.active {
     color: white;
     background-color: purple;
+    padding: 3px 8px; /* Matching regular nav items */
 }
 
 .nav-links a:hover:not(.active) {
@@ -84,7 +88,7 @@ header {
 }
 
 #hero h1 {
-    padding-left: 100px; /* Adjusted to improve layout */
+    padding-left: 100px; /* Adjusted for better layout */
     font-size: 2rem; /* Reduced font size */
     margin-bottom: 10px;
 }
@@ -104,10 +108,10 @@ header {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: palevioletred !important; /* Ensuring rose color */
+    background-color: palevioletred !important; /* Keeping the correct color */
     text-align: center;
     padding: 10px 0;
-    z-index: 999; /* Keeps nav below the toggle */
+    z-index: 999; /* Ensuring menu stays below toggle */
 }
 
 /* Footer */
@@ -150,7 +154,7 @@ footer {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: palevioletred !important; /* Fix: Keep rose color */
+        background-color: palevioletred !important; /* Keeping correct color */
         text-align: center;
         padding: 10px 0;
         z-index: 999;
@@ -173,7 +177,7 @@ footer {
     #leftsidebar {
         width: 200px;
         float: left;
-        background-color:#BBDBD1;
+        background-color: #BBDBD1;
         height: 100vh;
     }
     #main {
