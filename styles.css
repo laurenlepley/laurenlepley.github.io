@@ -109,17 +109,6 @@ footer {
     height: 30px;
 }
 
-#twitter {
-    width: 30px;
-    height: 30px;
-}
-
-#tiktok {
-    width: 30px;
-    height: 30px;
-}
-
-
 @media screen and (max-width: 768px) {
     body {
         background-color:#F28B7D;
