@@ -15,10 +15,15 @@ header {
     height: 50px !important;
 }
 
+#title {
+    text-align: center;
+    font-size: xx-large;
+    color: navy;
+}
 
 #bttm {
     text-align: center;
-    fornt-size: small;
+    font-size: small;
 
 .nav-links {
     margin: 0;
