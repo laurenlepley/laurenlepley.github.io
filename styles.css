@@ -1,6 +1,7 @@
 * {
     margin: 0;
 }
+
 body {
     margin: 0;
     background-color: #cfeecf;
@@ -24,6 +25,7 @@ header {
 #bttm {
     text-align: center;
     font-size: small;
+}
 
 .nav-links {
     margin: 0;
@@ -74,7 +76,7 @@ header {
 #hero h1 {
     padding-left: 180px;
     font-size: 3rem;
-    margin-bottom: 10 px;
+    margin-bottom: 10px;
 }
 
 .menu-toggle {
