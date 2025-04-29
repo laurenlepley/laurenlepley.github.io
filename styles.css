@@ -11,13 +11,13 @@ body {
     font-size: large;
 }
 
-/* Header */
+/* Header - Adjusted to be smaller */
 header {
     margin: 0;
     background-color: rgb(195, 232, 234);
     width: 100%;
     padding: 0;
-    height: 50px !important;
+    height: 40px; /* Reduced height */
 }
 
 /* Title Section */
@@ -36,31 +36,25 @@ header {
 /* Navigation Links */
 .nav-links {
     margin: 0;
-    background-color: palevioletred !important; /* Ensuring correct color */
+    background-color: palevioletred;
     text-decoration: none;
-    font-size: 18px; /* Adjusting font size */
+    font-size: 20px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center; /* Ensuring vertical alignment */
-    height: 30px; /* Reducing nav height */
-    padding: 0; /* Removing excess space */
 }
 
+/* Navigation Links */
 .nav-links a {
     text-decoration: none;
     color: white;
-    padding: 3px 8px; /* Reducing space around links */
-    font-size: 14px; /* Making font smaller */
-    display: flex; /* Ensures items align properly */
-    align-items: center; /* Centers text vertically */
-    justify-content: center; /* Centers text horizontally */
+    padding: 10px;
+    margin: 0;
 }
 
 .nav-links a.active {
     color: white;
     background-color: purple;
-    padding: 3px 8px; /* Matching regular nav items */
 }
 
 .nav-links a:hover:not(.active) {
@@ -88,16 +82,16 @@ header {
 }
 
 #hero h1 {
-    padding-left: 100px; /* Adjusted for better layout */
-    font-size: 2rem; /* Reduced font size */
+    padding-left: 180px;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
 /* Menu Toggle - Fix for Hamburger Menu */
 .menu-toggle {
     display: block;
-    font-size: 1.5rem; /* Making it smaller */
-    padding: 5px; /* Reducing excess spacing */
+    font-size: 2rem;
+    cursor: pointer;
     position: relative;
     z-index: 1000; /* Ensures toggle stays on top */
 }
@@ -108,10 +102,10 @@ header {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: palevioletred !important; /* Keeping the correct color */
+    background-color: palegoldenrod;
     text-align: center;
     padding: 10px 0;
-    z-index: 999; /* Ensuring menu stays below toggle */
+    z-index: 999; /* Keeps nav below the toggle */
 }
 
 /* Footer */
@@ -154,16 +148,12 @@ footer {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: palevioletred !important; /* Keeping correct color */
+        background-color: palegoldenrod;
         text-align: center;
         padding: 10px 0;
         z-index: 999;
     }
     
-    .nav-links a.active {
-        display: flex;
-    }
-
     .nav-links a {
         margin: 10px 0;
     }
@@ -177,7 +167,7 @@ footer {
     #leftsidebar {
         width: 200px;
         float: left;
-        background-color: #BBDBD1;
+        background-color:#BBDBD1;
         height: 100vh;
     }
     #main {
