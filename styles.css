@@ -21,6 +21,10 @@ header {
     color: navy;
 }
 
+#bttm {
+    text-align: center;
+    fornt-size: small;
+
 .nav-links {
     margin: 0;
     background-color: palevioletred;
@@ -113,9 +117,6 @@ footer {
     height: 30px;
 }
 
-#bhours {
-    color: #584D3D;
-}
 
 @media screen and (max-width: 768px) {
     body {
