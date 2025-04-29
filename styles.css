@@ -101,7 +101,7 @@ header {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: palegoldenrod;
+    background-color: palevioletred !important; /* Ensuring rose color */
     text-align: center;
     padding: 10px 0;
     z-index: 999; /* Keeps nav below the toggle */
@@ -147,12 +147,16 @@ footer {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: palevioletred !important; /* Force rose color */
+        background-color: palevioletred !important; /* Fix: Keep rose color */
         text-align: center;
         padding: 10px 0;
         z-index: 999;
     }
     
+    .nav-links a.active {
+        display: flex;
+    }
+
     .nav-links a {
         margin: 10px 0;
     }
