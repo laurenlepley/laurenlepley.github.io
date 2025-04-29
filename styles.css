@@ -86,11 +86,25 @@ header {
     margin-bottom: 10px;
 }
 
-/* Menu Toggle */
+/* Menu Toggle - Fix for Hamburger Menu */
 .menu-toggle {
-    display: none;
+    display: block;
     font-size: 2rem;
     cursor: pointer;
+    position: relative;
+    z-index: 1000; /* Ensures toggle stays on top */
+}
+
+/* Navigation Links - Ensure Correct Layering */
+.nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: palegoldenrod;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 999; /* Keeps nav below the toggle */
 }
 
 /* Footer */
@@ -123,7 +137,7 @@ footer {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     body {
-        background-color:#F28B7D;
+        background-color: #F28B7D;
     }
 
     .nav-links {
@@ -136,6 +150,7 @@ footer {
         background-color: palegoldenrod;
         text-align: center;
         padding: 10px 0;
+        z-index: 999;
     }
     
     .nav-links a {
