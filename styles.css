@@ -36,9 +36,9 @@ header {
 /* Navigation Links */
 .nav-links {
     margin: 0;
-    background-color: palevioletred;
+    background-color: palevioletred !important; /* Ensuring correct color */
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px; /* Adjusting font size */
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -47,7 +47,7 @@ header {
 .nav-links a {
     text-decoration: none;
     color: white;
-    padding: 10px;
+    padding: 5px; /* Adjusted padding for smaller tabs */
     margin: 0;
 }
 
@@ -81,8 +81,8 @@ header {
 }
 
 #hero h1 {
-    padding-left: 180px;
-    font-size: 3rem;
+    padding-left: 100px; /* Adjusted to improve layout */
+    font-size: 2rem; /* Reduced font size */
     margin-bottom: 10px;
 }
 
