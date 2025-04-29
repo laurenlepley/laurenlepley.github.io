@@ -147,7 +147,7 @@ footer {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: palegoldenrod;
+        background-color: palevioletred; /* Fix: Keep rose color */
         text-align: center;
         padding: 10px 0;
         z-index: 999;
