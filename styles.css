@@ -17,7 +17,7 @@ header {
     background-color: rgb(195, 232, 234);
     width: 100%;
     padding: 0;
-    height: 40px; /* Reduced height */
+    height: 20px; /* Reduced height */
 }
 
 /* Title Section */
@@ -42,7 +42,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding: 20px 0; /* Increased padding to make banner larger */
+    padding: 10px 0; /* Increased padding to make banner larger */
 }
 
 /* Navigation Links */
