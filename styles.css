@@ -1,39 +1,43 @@
-/* Universal Styles */
+
 * {
     margin: 0;
-    box-sizing: border-box;
 }
-
-/* Body */
 body {
     margin: 0;
     background-color: #cfeecf;
     font-size: large;
 }
 
-/* Header - Adjusted to be smaller */
 header {
-    margin: 0;
+    margin:0;
     background-color: rgb(195, 232, 234);
     width: 100%;
     padding: 0;
-    height: 10px; /* Reduced height */
+    height: 50px !important;
 }
 
-/* Title Section */
 #title {
     text-align: center;
     font-size: xx-large;
     color: navy;
 }
 
-/* Back to Bottom Link */
-#bttm {
-    text-align: center;
-    font-size: small;
+/* Social Media Links */
+#socials a { 
+    text-decoration: none;
 }
 
-/* Navigation Links - Expanded Rose Banner */
+/* Image Styling */
+#selfImg {
+    width: 400px;
+    height: 500px;
+}
+
+#social_medias {
+    width: 30px;
+    height: 30px;
+}
+
 .nav-links {
     margin: 0;
     background-color: palevioletred;
@@ -42,10 +46,8 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding: 0px 0; /* Increased padding to make banner larger */
 }
 
-/* Navigation Links */
 .nav-links a {
     text-decoration: none;
     color: white;
@@ -76,18 +78,6 @@ header {
     min-height: 100vh;
 }
 
-/* Hero Section */
-#hero {
-    height: 100vh; 
-    display: flex;
-}
-
-#hero h1 {
-    padding-left: 180px;
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
 /* Menu Toggle - Fix for Hamburger Menu */
 .menu-toggle {
     display: block;
@@ -97,22 +87,27 @@ header {
     z-index: 1000; /* Ensures toggle stays on top */
 }
 
-/* Navigation Links - Ensure Correct Layering */
-.nav-links {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: palevioletred;
-    text-align: center;
-    padding: 10px 0;
-    z-index: 999; /* Keeps nav below the toggle */
+#socials a { 
+    text-decoration: none;
 }
 
-/* Footer */
+#SelfImg {
+    width: 300px;
+    height: 400px;
+}
+
+#social_medias {
+    width: 40px;
+    height: 40px;
+}
+
+#bttm {
+    font-size: small;
+}
+
 footer {
     margin: 0;
-    background-color: #F28B7D;
+    background-color: #cfeecf;
     font-size: 20px;
     width: 100%;
     padding: 0;
@@ -120,28 +115,7 @@ footer {
     align-items: center;
 }
 
-/* Social Media Links */
-#socials a { 
-    text-decoration: none;
-}
-
-/* Image Styling */
-#selfImg {
-    width: 400px;
-    height: 500px;
-}
-
-#social_medias {
-    width: 30px;
-    height: 30px;
-}
-
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
-    body {
-        background-color: #F28B7D;
-    }
-
     .nav-links {
         display: none;
         flex-direction: column;
@@ -152,11 +126,15 @@ footer {
         background-color: palegoldenrod;
         text-align: center;
         padding: 10px 0;
-        z-index: 999;
     }
     
-    .nav-links a {
+    .nav-links a.active {
+        display: flex;
+    }
+
+    .nav-links a{
         margin: 10px 0;
+
     }
 
     .menu-toggle {
@@ -164,14 +142,6 @@ footer {
     }
 }
 
-@media screen and (min-width: 1024px) {
-    #leftsidebar {
-        width: 200px;
-        float: left;
-        background-color:#BBDBD1;
-        height: 100vh;
-    }
-    #main {
-        margin-left: 200px;
-    }
+body {
+    cursor: crosshair;
 }
