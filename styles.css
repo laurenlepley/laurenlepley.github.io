@@ -69,24 +69,6 @@ header {
     color: white;
 }
 
-/* Main Section */
-#main {
-    margin-left: 0;
-    padding: 0;
-    background-color: mintgreen;
-    width: 100%;
-    min-height: 100vh;
-}
-
-/* Menu Toggle - Fix for Hamburger Menu */
-.menu-toggle {
-    display: block;
-    font-size: 2rem;
-    cursor: pointer;
-    position: relative;
-    z-index: 1000; /* Ensures toggle stays on top */
-}
-
 #socials a { 
     text-decoration: none;
 }
