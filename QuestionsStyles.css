@@ -94,5 +94,5 @@ footer {
 }
 
 body {
-    cursor: ./paint-brush.png;
+  cursor: url('paint-brush.png'), auto;
 }
