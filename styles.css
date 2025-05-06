@@ -40,7 +40,7 @@ body {
 
 /* Text block */
 .text {
-  flex: 1;
+  flex: .5;
 }
 
 /* Image block */
