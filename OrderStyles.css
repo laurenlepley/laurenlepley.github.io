@@ -108,5 +108,5 @@ footer {
 }
 
 body {
-    cursor: crosshair;
+    cursor: ./paint-brush.png;
 }
