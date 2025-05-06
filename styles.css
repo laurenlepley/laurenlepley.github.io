@@ -22,19 +22,33 @@ header {
     color: navy;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Container layout */
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 40px; /* Space around entire layout */
+  max-width: 1200px; /* Limits width on large screens */
+  margin: 0 auto; /* Center container */
 }
 
+/* Text block */
 .text {
   flex: 1;
+  padding-left: 20px;
   padding-right: 20px;
 }
 
+/* Image block */
 .image img {
-  max-width: 300px; /* Adjust as needed */
+  max-width: 300px;
   height: auto;
 }
 
