@@ -113,3 +113,7 @@ header {
         display: block;
     }
 }
+
+body {
+    cursor: ./paint-brush.png;
+}
