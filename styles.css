@@ -29,18 +29,18 @@ body {
   font-family: serif;
 }
 
-/* Container layout */
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px; /* Space around entire layout */
-  margin: 0 auto; /* Center container */
+  padding-left: 10px;  /* Space from the left */
+  padding-right: 30px; /* Optional: space on the right */
+  margin: 0 auto;
 }
 
-/* Text block */
 .text {
-  flex: .5;
+  flex: 0.5;
+  padding-left: 5px;  /* Small gap from the edge */
 }
 
 /* Image block */
