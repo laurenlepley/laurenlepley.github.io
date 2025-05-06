@@ -34,20 +34,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px; /* Space around entire layout */
-  max-width: 1200px; /* Limits width on large screens */
+  padding: 5px; /* Space around entire layout */
   margin: 0 auto; /* Center container */
 }
 
 /* Text block */
 .text {
   flex: 1;
-  padding-right: 5px;
 }
 
 /* Image block */
 .image img {
-  max-width: 400px;
+  width: 400px;
   height: 500px;
 }
 
