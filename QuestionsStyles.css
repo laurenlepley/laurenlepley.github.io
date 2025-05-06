@@ -1,41 +1,43 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
+
 body {
     margin: 0;
+    padding: 0 20px; /* Added padding to left and right sides */
     background-color: #cfeecf;
     font-size: large;
+    cursor: url('paint-brush.png'), auto;
 }
 
 header {
-    margin:0;
     background-color: rgb(195, 232, 234);
     width: 100%;
-    padding: 0;
-    height: 50px !important;
+    padding: 0 20px; /* Optional: align with body padding */
+    height: 50px;
 }
 
 #title {
     text-align: center;
     font-size: xx-large;
     color: navy;
+    padding: 10px 0;
 }
 
 .nav-links {
-    margin: 0;
     background-color: palevioletred;
-    text-decoration: none;
     font-size: 20px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    padding: 10px 0;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
     padding: 10px;
-    margin: 0;
 }
 
 .nav-links a.active {
@@ -53,10 +55,41 @@ header {
 }
 
 footer {
-    margin: 0;
     background-color: #cfeecf;
     font-size: 20px;
     width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#quest {
+    color: rgb(170, 45, 6);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: palegoldenrod;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+  width: 100%;
     padding: 0;
     justify-content: space-evenly;
     align-items: center;
