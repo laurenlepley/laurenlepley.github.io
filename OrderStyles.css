@@ -1,51 +1,41 @@
-/* Reset and base styles */
 * {
     margin: 0;
-    box-sizing: border-box; /* Important fix */
 }
-
 body {
     margin: 0;
     background-color: #cfeecf;
     font-size: large;
-    cursor: url('paint-brush.png'), auto;
-    padding: 0;
 }
 
-/* Header and nav */
 header {
+    margin:0;
     background-color: rgb(195, 232, 234);
     width: 100%;
-    height: 50px;
+    padding: 0;
+    height: 50px !important;
 }
 
-.nav-links {
-    background-color: palevioletred;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px 0;
-    width: 100%;
-}
-
-/* Container with proper padding */
-.container {
-    padding: 0 20px;
-}
-
-/* Title styling */
 #title {
     text-align: center;
     font-size: xx-large;
     color: navy;
-    padding-top: 20px;
 }
 
-/* Nav link styles */
+.nav-links {
+    margin: 0;
+    background-color: palevioletred;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .nav-links a {
     text-decoration: none;
     color: white;
     padding: 10px;
+    margin: 0;
 }
 
 .nav-links a.active {
@@ -62,18 +52,10 @@ header {
     color: white;
 }
 
-/* Footer */
-footer {
-    margin: 0;
-    background-color: #cfeecf;
-    font-size: 20px;
-    width: 100%;
-    padding: 0;
-    justify-content: space-evenly;
-    align-items: center;
+#socials a { 
+    text-decoration: none;
 }
 
-/* Image sizes */
 #SelfImg {
     width: 300px;
     height: 400px;
@@ -84,19 +66,25 @@ footer {
     height: 40px;
 }
 
-#socials a {
-    text-decoration: none;
-}
-
 #bttm {
     font-size: small;
 }
 
-/* Mobile styles */
+footer {
+    margin: 0;
+    background-color: #cfeecf;
+    font-size: 20px;
+    width: 100%;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
+        width: 100%;
         position: absolute;
         top: 60px;
         left: 0;
@@ -104,16 +92,21 @@ footer {
         text-align: center;
         padding: 10px 0;
     }
-
+    
     .nav-links a.active {
         display: flex;
     }
 
-    .nav-links a {
+    .nav-links a{
         margin: 10px 0;
+
     }
 
     .menu-toggle {
         display: block;
     }
+}
+
+body {
+  cursor: url('paint-brush.png'), auto;
 }
