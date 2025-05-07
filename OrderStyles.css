@@ -1,8 +1,8 @@
 /* Reset and base styles */
 * {
     margin: 0;
-    padding: 0; /* Remove all default padding */
-    box-sizing: border-box; /* Important to include padding in width/height calculations */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensures padding doesn't affect width/height calculations */
 }
 
 body {
@@ -12,35 +12,35 @@ body {
     cursor: url('paint-brush.png'), auto;
 }
 
-/* Header adjustments */
+/* Header and nav bar adjustments */
 header {
     background-color: rgb(195, 232, 234);
-    width: 100%;
-    height: 40px; /* Set the header height */
-    line-height: 40px; /* Center text vertically */
+    width: 100%; /* Make sure header spans full width */
+    height: 40px; /* Set header height */
+    padding: 0; /* No padding to prevent unnecessary space */
     display: flex;
-    align-items: center; /* Vertically center the content */
-    padding: 0; /* Remove any internal padding */
+    justify-content: center; /* Center the nav bar content horizontally */
+    align-items: center; /* Center the content vertically */
 }
 
-/* Navigation links adjustments */
+/* Navigation links adjustment */
 .nav-links {
     background-color: palevioletred;
-    font-size: 18px; /* Slightly smaller font size */
+    font-size: 18px;
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 0; /* Remove any internal padding */
+    justify-content: space-evenly; /* Space out the links evenly */
+    align-items: center; /* Vertically center items */
+    width: 100%; /* Ensure nav links span the full width */
+    padding: 0; /* No padding inside */
 }
 
-/* Link styling within nav */
 .nav-links a {
     text-decoration: none;
     color: white;
-    padding: 5px 10px; /* Reduced padding */
-    display: flex;
+    padding: 5px 10px; /* Adjust padding for the links */
+    display: inline-flex;
     align-items: center; /* Vertically center the link text */
-    justify-content: center; /* Ensure centering within each link */
+    justify-content: center; /* Horizontally center the link text */
 }
 
 /* Active and hover states for nav links */
@@ -58,14 +58,15 @@ header {
     color: white;
 }
 
-/* Footer */
+/* Footer adjustments */
 footer {
     margin: 0;
     background-color: #cfeecf;
     font-size: 20px;
     width: 100%;
     padding: 0;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: center; /* Center footer content */
     align-items: center;
 }
 
