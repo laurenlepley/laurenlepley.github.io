@@ -33,8 +33,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10px;  /* Space from the left */
-  padding-right: 15px; /* Optional: space on the right */
+  padding-left: 20px;  /* Space from the left */
+  padding-right: 30px; /* Optional: space on the right */
   margin: 0 auto;
 }
 
