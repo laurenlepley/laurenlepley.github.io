@@ -4,19 +4,18 @@
 
 body {
     margin: 0;
-    padding: 0 20px; /* Add spacing to left and right */
+    padding: 0 20px;
     background-color: #cfeecf;
     font-size: large;
     cursor: url('paint-brush.png'), auto;
 }
 
 header {
+    margin:0;
     background-color: rgb(195, 232, 234);
-    width: 100vw;          /* Full screen width */
-    padding: 0;            /* Remove inherited padding */
-    margin-left: -20px;    /* Counter the body's padding */
-    height: 50px;
-    position: relative;    /* Ensure proper layout */
+    width: 100%;
+    padding: 0;
+    height: 50px !important;
 }
 
 #title {
@@ -26,13 +25,13 @@ header {
 }
 
 .nav-links {
+    margin: 0;
     background-color: palevioletred;
+    text-decoration: none;
     font-size: 20px;
-    width: 100vw;          /* Full screen width */
-    margin-left: -20px;    /* Counter the body's padding */
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding: 10px 0;
 }
 
 .nav-links a {
@@ -56,13 +55,30 @@ header {
     color: white;
 }
 
+#socials a { 
+    text-decoration: none;
+}
+
+#SelfImg {
+    width: 300px;
+    height: 400px;
+}
+
+#social_medias {
+    width: 40px;
+    height: 40px;
+}
+
+#bttm {
+    font-size: small;
+}
 
 footer {
+    margin: 0;
     background-color: #cfeecf;
     font-size: 20px;
     width: 100%;
-    padding: 10px 20px; /* Add horizontal padding */
-    display: flex;
+    padding: 0;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -79,13 +95,14 @@ footer {
         text-align: center;
         padding: 10px 0;
     }
-
+    
     .nav-links a.active {
-        display: block;
+        display: flex;
     }
 
-    .nav-links a {
+    .nav-links a{
         margin: 10px 0;
+
     }
 
     .menu-toggle {
