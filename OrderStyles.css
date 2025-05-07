@@ -12,42 +12,37 @@ body {
     padding: 0;
 }
 
-/* Header and nav */
+/* Header adjustments */
 header {
     background-color: rgb(195, 232, 234);
     width: 100%;
-    height: 40px;
+    height: 40px; /* Set the header height */
+    display: flex;
+    align-items: center; /* Vertically center the header content */
+    padding: 0; /* Remove extra padding */
 }
 
+/* Navigation links adjustments */
 .nav-links {
     background-color: palevioletred;
-    font-size: 20px;
+    font-size: 18px; /* Slightly smaller font size */
     display: flex;
     justify-content: space-evenly;
-    padding: 10px 0;
+    padding: 0 0; /* Remove vertical padding */
     width: 100%;
 }
 
-/* Container with proper padding */
-.container {
-    padding: 0 20px;
-}
-
-/* Title styling */
-#title {
-    text-align: center;
-    font-size: xx-large;
-    color: navy;
-    padding-top: 20px;
-}
-
-/* Nav link styles */
+/* Link styling within nav */
 .nav-links a {
     text-decoration: none;
     color: white;
-    padding: 10px;
+    padding: 5px 10px; /* Reduced padding */
+    display: flex;
+    align-items: center; /* Vertically center link text */
+    justify-content: center; /* Ensure centering within each link */
 }
 
+/* Adjust for the active and hover states */
 .nav-links a.active {
     color: white;
     background-color: purple;
