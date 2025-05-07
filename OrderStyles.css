@@ -25,7 +25,9 @@ header {
 }
 
 .nav-links {
+    margin: 0;
     background-color: palevioletred;
+    text-decoration: none;
     font-size: 20px;
     width: 100%;
     display: flex;
@@ -36,6 +38,7 @@ header {
     text-decoration: none;
     color: white;
     padding: 10px;
+    margin: 0;
 }
 
 .nav-links a.active {
