@@ -56,3 +56,23 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('The page was reset.');
     });
 });
+
+// Function to check if dark mode is enabled (for demonstration purposes)
+function checkDarkMode() {
+    // Let's assume we check for a specific condition, like a button click, or check localStorage for dark mode preference
+    let isDarkMode = localStorage.getItem('darkMode') === 'true'; // For example, if darkMode is set to 'true' in localStorage
+
+    // Target the header element
+    const header = document.getElementById('header');
+
+    // Apply styles based on the condition
+    if (isDarkMode) {
+        // If dark mode is true, set the background color to dark
+        header.style.backgroundColor = '#333'; // Dark background for header
+        header.style.color = '#fff'; // White text for header
+    } else {
+        // If dark mode is false, set the background color to light
+        header.style.backgroundColor = 'rgb(195, 232, 234)'; // Light background (default from CSS)
+        header.style.color = '#000'; // Black text for header
+    }
+}
