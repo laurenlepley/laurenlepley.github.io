@@ -56,3 +56,26 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('The page was reset.');
     });
 });
+
+function validateForm() {
+    // Get email and phone number input values
+    const email = document.forms["OrderForm"]["Email"].value;
+    const phoneNumber = document.forms["OrderForm"]["Phone_Number"].value;
+
+    // Email validation
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email.match(emailRegex)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    // Phone number validation
+    const phoneRegex = /^\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{4}$/; // Validates phone formats like (555) 555-5555 or 555-555-5555
+    if (!phoneNumber.match(phoneRegex)) {
+        alert("Please enter a valid phone number (e.g., (555) 555-5555).");
+        return false;
+    }
+
+    // If everything is valid
+    return true;
+}
