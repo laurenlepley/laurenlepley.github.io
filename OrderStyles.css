@@ -1,95 +1,112 @@
-/* General reset for all elements */
+/* Reset and base styles */
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Ensures padding doesn’t affect width/height */
+    box-sizing: border-box; /* Important fix */
 }
 
-/* Body styling */
 body {
     margin: 0;
     background-color: #cfeecf;
     font-size: large;
     cursor: url('paint-brush.png'), auto;
+    padding: 0;
 }
 
-/* Header styling */
+/* Header and nav */
 header {
     background-color: rgb(195, 232, 234);
-    width: 100%; /* Full width */
-    height: 40px; /* Reduced height */
-    padding: 0; /* No padding */
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    width: 100%;
+    height: 50px;
 }
 
-/* Navigation links styling */
 .nav-links {
     background-color: palevioletred;
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
-    justify-content: space-evenly; /* Evenly spaces out the links */
-    align-items: center; /* Vertically centers the links */
-    width: 100%; /* Full width */
-    padding: 0; /* No padding */
+    justify-content: space-evenly;
+    padding: 10px 0;
+    width: 100%;
 }
 
-/* Individual nav link styling */
+/* Container with proper padding */
+.container {
+    padding: 0 20px;
+}
+
+/* Title styling */
+#title {
+    text-align: center;
+    font-size: xx-large;
+    color: navy;
+    padding-top: 20px;
+}
+
+/* Nav link styles */
 .nav-links a {
     text-decoration: none;
     color: white;
-    padding: 5px 10px; /* Adjust link padding */
-    display: inline-flex;
-    align-items: center; /* Centers text vertically */
-    justify-content: center; /* Centers text horizontally */
+    padding: 10px;
 }
 
-/* Active link styling */
 .nav-links a.active {
     color: white;
     background-color: purple;
 }
 
-/* Hover effect for non-active links */
 .nav-links a:hover:not(.active) {
     background-color: chartreuse;
     color: black;
 }
 
-/* Visited link styling */
 .nav-links a:visited {
     color: white;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
+    margin: 0;
     background-color: #cfeecf;
     font-size: 20px;
     width: 100%;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
+    padding: 0;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-/* Media queries for mobile devices */
+/* Image sizes */
+#SelfImg {
+    width: 300px;
+    height: 400px;
+}
+
+#social_medias {
+    width: 40px;
+    height: 40px;
+}
+
+#socials a {
+    text-decoration: none;
+}
+
+#bttm {
+    font-size: small;
+}
+
+/* Mobile styles */
 @media screen and (max-width: 768px) {
-    /* Mobile nav bar */
     .nav-links {
-        display: none; /* Hide by default */
-        flex-direction: column; /* Stack links vertically */
+        display: none;
+        flex-direction: column;
         position: absolute;
-        top: 60px; /* Below the header */
+        top: 60px;
         left: 0;
         background-color: palegoldenrod;
         text-align: center;
-        width: 100%; /* Full width */
         padding: 10px 0;
     }
 
     .nav-links a.active {
-        display: flex; /* Show active links */
+        display: flex;
     }
 
     .nav-links a {
@@ -97,6 +114,6 @@ footer {
     }
 
     .menu-toggle {
-        display: block; /* Mobile menu toggle */
+        display: block;
     }
 }
