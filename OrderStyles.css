@@ -14,7 +14,6 @@ body {
 header {
     background-color: rgb(195, 232, 234);
     width: 100%;
-    padding: 0 20px; /* Align header content with body padding */
     height: 50px;
 }
 
