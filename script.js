@@ -38,18 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return;  // Stop if form is not found
     }
 
-    // Handle form submission (Submit button)
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();  // Prevent the form from submitting for demo
-
-        const clickedButton = event.submitter; // Get the button that triggered the event
-
-        if (clickedButton && clickedButton.name === 'submitButton') {
-            alert('Thank you for submitting!');
-            console.log('Thank you for submitting!');
-        }
-    });
-
     // Handle reset button click (Reset event)
     form.addEventListener('reset', function(event) {
         alert('The page was reset.');
