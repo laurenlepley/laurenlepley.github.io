@@ -58,27 +58,23 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function validateForm() {
-    // Clear previous error messages
-    document.getElementById("error-message").innerHTML = "The information you provided was invalid.";
+    const errorDiv = document.getElementById("error-message");
+    errorDiv.innerHTML = ""; // Clear old messages
 
-    // Get email and phone number input values
     const email = document.forms["OrderForm"]["Email"].value;
     const phoneNumber = document.forms["OrderForm"]["Phone_Number"].value;
 
-    // Email validation
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!email.match(emailRegex)) {
-        document.getElementById("error-message").innerHTML = "Please enter a valid email address.";
-        return false;
-    }
-
-    // Phone number validation
     const phoneRegex = /^\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{4}$/;
-    if (!phoneNumber.match(phoneRegex)) {
-        document.getElementById("error-message").innerHTML = "Please enter a valid phone number (e.g., (555) 555-5555).";
-        return false;
-    }
 
-    // If everything is valid
-    return true;
+    if (!email.match(emailRegex)) {
+        errorDiv.innerHTML = "Please enter a valid email address.";
+        return false;
+    } else if (!phoneNumber.match(phoneRegex)) {
+        errorDiv.innerHTML = "Please enter a valid phone number (e.g., (555) 555-5555).";
+        return false;
+    } else {
+        errorDiv.innerHTML = ""; // Clear errors if everything is valid
+        return true;
+    }
 }
