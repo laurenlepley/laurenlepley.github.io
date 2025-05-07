@@ -21,7 +21,6 @@ header {
     text-align: center;
     font-size: xx-large;
     color: navy;
-    padding: 10px 0;
 }
 
 .nav-links {
@@ -30,7 +29,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding: 10px 0;
 }
 
 .nav-links a {
