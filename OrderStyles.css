@@ -1,10 +1,11 @@
-/* Reset and base styles */
+/* General reset for all elements */
 * {
     margin: 0;
-    padding: 0; /* Remove default padding */
-    box-sizing: border-box; /* Ensures padding doesn't affect width/height calculations */
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding doesn’t affect width/height */
 }
 
+/* Body styling */
 body {
     margin: 0;
     background-color: #cfeecf;
@@ -12,98 +13,83 @@ body {
     cursor: url('paint-brush.png'), auto;
 }
 
-/* Header and nav bar adjustments */
+/* Header styling */
 header {
     background-color: rgb(195, 232, 234);
-    width: 100%; /* Make sure header spans full width */
-    height: 40px; /* Set header height */
-    padding: 0; /* No padding to prevent unnecessary space */
+    width: 100%; /* Full width */
+    height: 40px; /* Reduced height */
+    padding: 0; /* No padding */
     display: flex;
-    justify-content: center; /* Center the nav bar content horizontally */
-    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
 }
 
-/* Navigation links adjustment */
+/* Navigation links styling */
 .nav-links {
     background-color: palevioletred;
     font-size: 18px;
     display: flex;
-    justify-content: space-evenly; /* Space out the links evenly */
-    align-items: center; /* Vertically center items */
-    width: 100%; /* Ensure nav links span the full width */
-    padding: 0; /* No padding inside */
+    justify-content: space-evenly; /* Evenly spaces out the links */
+    align-items: center; /* Vertically centers the links */
+    width: 100%; /* Full width */
+    padding: 0; /* No padding */
 }
 
+/* Individual nav link styling */
 .nav-links a {
     text-decoration: none;
     color: white;
-    padding: 5px 10px; /* Adjust padding for the links */
+    padding: 5px 10px; /* Adjust link padding */
     display: inline-flex;
-    align-items: center; /* Vertically center the link text */
-    justify-content: center; /* Horizontally center the link text */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
 }
 
-/* Active and hover states for nav links */
+/* Active link styling */
 .nav-links a.active {
     color: white;
     background-color: purple;
 }
 
+/* Hover effect for non-active links */
 .nav-links a:hover:not(.active) {
     background-color: chartreuse;
     color: black;
 }
 
+/* Visited link styling */
 .nav-links a:visited {
     color: white;
 }
 
-/* Footer adjustments */
+/* Footer styling */
 footer {
-    margin: 0;
     background-color: #cfeecf;
     font-size: 20px;
     width: 100%;
-    padding: 0;
+    padding: 10px 0;
     display: flex;
-    justify-content: center; /* Center footer content */
+    justify-content: center;
     align-items: center;
 }
 
-/* Image sizes */
-#SelfImg {
-    width: 300px;
-    height: 400px;
-}
-
-#social_medias {
-    width: 40px;
-    height: 40px;
-}
-
-#socials a {
-    text-decoration: none;
-}
-
-#bttm {
-    font-size: small;
-}
-
-/* Mobile styles */
+/* Media queries for mobile devices */
 @media screen and (max-width: 768px) {
+    /* Mobile nav bar */
     .nav-links {
-        display: none;
-        flex-direction: column;
+        display: none; /* Hide by default */
+        flex-direction: column; /* Stack links vertically */
         position: absolute;
-        top: 60px;
+        top: 60px; /* Below the header */
         left: 0;
         background-color: palegoldenrod;
         text-align: center;
+        width: 100%; /* Full width */
         padding: 10px 0;
     }
 
     .nav-links a.active {
-        display: flex;
+        display: flex; /* Show active links */
     }
 
     .nav-links a {
@@ -111,6 +97,6 @@ footer {
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Mobile menu toggle */
     }
 }
