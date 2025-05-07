@@ -1,6 +1,7 @@
+/* Reset and base styles */
 * {
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Important fix */
 }
 
 body {
@@ -8,42 +9,43 @@ body {
     background-color: #cfeecf;
     font-size: large;
     cursor: url('paint-brush.png'), auto;
+    padding: 0;
 }
 
-.container {
-    padding: 0 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
+/* Header and nav */
 header {
     background-color: rgb(195, 232, 234);
     width: 100%;
-    padding: 0;
     height: 50px;
-}
-
-#title {
-    text-align: center;
-    font-size: xx-large;
-    color: navy;
-    line-height: 50px;
 }
 
 .nav-links {
     background-color: palevioletred;
     font-size: 20px;
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     padding: 10px 0;
+    width: 100%;
 }
 
+/* Container with proper padding */
+.container {
+    padding: 0 20px;
+}
+
+/* Title styling */
+#title {
+    text-align: center;
+    font-size: xx-large;
+    color: navy;
+    padding-top: 20px;
+}
+
+/* Nav link styles */
 .nav-links a {
     text-decoration: none;
     color: white;
     padding: 10px;
-    margin: 0;
 }
 
 .nav-links a.active {
@@ -60,10 +62,18 @@ header {
     color: white;
 }
 
-#socials a { 
-    text-decoration: none;
+/* Footer */
+footer {
+    margin: 0;
+    background-color: #cfeecf;
+    font-size: 20px;
+    width: 100%;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+/* Image sizes */
 #SelfImg {
     width: 300px;
     height: 400px;
@@ -74,27 +84,19 @@ header {
     height: 40px;
 }
 
+#socials a {
+    text-decoration: none;
+}
+
 #bttm {
     font-size: small;
 }
 
-footer {
-    margin: 0;
-    background-color: #cfeecf;
-    font-size: 20px;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-/* Responsive Navigation */
+/* Mobile styles */
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
         position: absolute;
         top: 60px;
         left: 0;
