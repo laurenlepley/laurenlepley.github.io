@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-    padding: 20px;
     background-color: #cfeecf;
     font-size: large;
     cursor: url('paint-brush.png'), auto;
@@ -16,6 +15,10 @@ header {
     width: 100%;
     padding: 0;
     height: 50px !important;
+}
+
+.container {
+    padding: 0 20px;
 }
 
 #title {
