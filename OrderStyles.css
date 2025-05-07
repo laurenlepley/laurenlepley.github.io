@@ -11,11 +11,12 @@ body {
 }
 
 header {
-    margin:0;
     background-color: rgb(195, 232, 234);
-    width: 100%;
-    padding: 0;
-    height: 50px !important;
+    width: 100vw;          /* Full screen width */
+    padding: 0;            /* Remove inherited padding */
+    margin-left: -20px;    /* Counter the body's padding */
+    height: 50px;
+    position: relative;    /* Ensure proper layout */
 }
 
 #title {
@@ -25,13 +26,13 @@ header {
 }
 
 .nav-links {
-    margin: -1;
     background-color: palevioletred;
-    text-decoration: none;
     font-size: 20px;
-    width: 100%;
+    width: 100vw;          /* Full screen width */
+    margin-left: -20px;    /* Counter the body's padding */
     display: flex;
     justify-content: space-evenly;
+    padding: 10px 0;
 }
 
 .nav-links a {
